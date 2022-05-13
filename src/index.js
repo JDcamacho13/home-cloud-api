@@ -12,6 +12,6 @@ app.use(express.urlencoded({ extended: true }))
 
 router(app)
 
-server.listen(3001, () => {
+server.listen(process.env.PORT, () => {
   console.log(`La app esta escuchando en: 'http://localhost:3001')`)
 })
